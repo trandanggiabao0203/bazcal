@@ -63,7 +63,7 @@ const handler = async (message, args) => {
             return NUMBER_EMOJI.includes(reaction.emoji.name) && user.id === userID
         }
 
-        // Asks which orders he would like to invest in
+        // Asks which orders user would like to invest in
         const reaction_array = []
 
         /**
@@ -106,7 +106,7 @@ const handler = async (message, args) => {
     // just always save I'm not even gonna check anymore
     await member.save();
 
-    await message.channel.send('Check you channel :-)');
+    await message.channel.send('Check your channel :-)');
 
     const auctions = await send_flips(channel);
 
